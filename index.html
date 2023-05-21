@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Folder List App</title>
+</head>
+<body>
+  <h1>Folder List App</h1>
+  <form action="/api/folder/list" method="get">
+    <label for="folderId">Folder ID:</label>
+    <input type="text" id="folderId" name="fld_id" required>
+
+    <label for="apiKey">API Key:</label>
+    <input type="text" id="apiKey" name="key" required>
+
+    <button type="submit">List Files and Folders</button>
+  </form>
+</body>
+</html>
