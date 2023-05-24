@@ -36,3 +36,13 @@ if related_videos:
         print('No related video links found.')
 else:
     print('Related videos section not found on the page.')
+
+
+# copy the link from terminal 
+# go to link.txt and copy the links 
+# after that go to 2nd py 
+#  and simply run
+# links will be stored to output.txt
+# go to 3_pdisk_upload.py and run
+# File URLs written to uploads.txt after running 
+
