@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import pyperclip
 
 # specify the URL of the page to scrape
 url = 'http://desivdo.com/'
@@ -29,14 +28,14 @@ if related_videos:
                 print(link)
                 unique_links.add(link)
         
-        # copy the links to the clipboard
-        pyperclip.copy('\n'.join(unique_links))
-        print('The links have been copied to the clipboard.')
+        # save the links to a file named "links.txt"
+        with open("links.txt", "w") as file:
+            file.write('\n'.join(unique_links))
+        print('The links have been saved in "links.txt" file.')
     else:
         print('No related video links found.')
 else:
     print('Related videos section not found on the page.')
-
 
 # copy the link from terminal 
 # go to link.txt and copy the links 
